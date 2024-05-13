@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head.ejs')%>
+  <body>
+    <%- include('partials/header.ejs')%>
+    <main>
+      <h1>Wybierz wydarzenie</h1>
+      <form action="/reserve-tickets" method='PUT'>
+        <input type="text" name="name" />
+        <input type="number" name="quantity">
+        <button>Rezerwuj</buton>
+      </form>
+    </main>
+  </body>
+</html>

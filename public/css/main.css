@@ -1,0 +1,16 @@
+ul {
+    gap: 10px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+th, td {
+    border: 1px solid;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}

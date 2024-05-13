@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head.ejs')%>
+  <body>
+    <%- include('partials/header.ejs')%>
+    <main>
+      <h1>Home</h1>
+      <h2>Lista dostępnych wydarzeń:</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nazwa</th>
+            <th>Data</th>
+            <th>Liczba wolnych miejsc</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for (let event of events) { %>
+            <tr>
+              <td><%= event.nazwa %></td>
+              <td><%= event.data %></td>
+              <td><%= event.ilosc %></td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
